@@ -1,4 +1,4 @@
-# SoftwareToolsProjectTeam3
+# Software Tools Project - Team 3
 
 ## ADEC 7900 Software Tools for Data Analysis Group Project
 ### Team 3
