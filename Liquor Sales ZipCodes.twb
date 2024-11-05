@@ -1,0 +1,540 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20232.24.0812.0905                               -->
+<workbook original-version='18.1' source-build='2023.2.12 (20232.24.0812.0905)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <MapboxVectorStylesAndLayers />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='project.sales.zipcodes+' inline='true' name='federated.1n3awyt082fc9w19y1da70llcwz9' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='project.sales.zipcodes' name='textscan.1j0e6y0115bsz2138ak191ygnlvn'>
+            <connection class='textclean' cleaning='yes' compat='no' csvFile='/Users/pg5/Desktop/PG Files/BC/1-Semesters/Fall 2024/ADEC7900/Course Project/project.data/project.sales.zipcodes.csv' dataRefreshTime='' directory='/Users/pg5/Desktop/PG Files/BC/1-Semesters/Fall 2024/ADEC7900/Course Project/project.data' filename='/var/folders/4p/kdvmt33j5mqblwks4rx07l_m0000gn/T/tableau-temp/0uzuaol1coenev17osrbo08e53mg/project.sales.zipcodes.csv.xlsx' interpretationMode='8' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1j0e6y0115bsz2138ak191ygnlvn' name='project.acs.zipcodes.csv' table='[project.acs.zipcodes#csv$]' type='table'>
+          <columns gridOrigin='A1:M939:no:A1:M939:2'>
+            <column datatype='integer' name='zipcode zipcode' ordinal='0' />
+            <column datatype='real' name='high.school high.school' ordinal='1' />
+            <column datatype='real' name='bachelor bachelor' ordinal='2' />
+            <column datatype='real' name='unemployment unemployment' ordinal='3' />
+            <column datatype='integer' name='income income' ordinal='4' />
+            <column datatype='integer' name='population population' ordinal='5' />
+            <column datatype='integer' name='pop.white pop.white' ordinal='6' />
+            <column datatype='integer' name='pop.black pop.black' ordinal='7' />
+            <column datatype='integer' name='pop.indian pop.indian' ordinal='8' />
+            <column datatype='integer' name='pop.asian pop.asian' ordinal='9' />
+            <column datatype='integer' name='pop.hawai pop.hawai' ordinal='10' />
+            <column datatype='integer' name='pop.other pop.other' ordinal='11' />
+            <column datatype='integer' name='pop.multi pop.multi' ordinal='12' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
+          <relation connection='textscan.1j0e6y0115bsz2138ak191ygnlvn' name='project.sales.zipcodes.csv' table='[project.sales.zipcodes#csv$]' type='table'>
+            <columns character-set='UTF-8' gridOrigin='A1:D4152:no:A1:D4152:2' header='yes' locale='en_US' separator=','>
+              <column datatype='integer' name='zipcode zipcode' ordinal='0' />
+              <column datatype='string' name='category category' ordinal='1' />
+              <column datatype='integer' name='sale.dollars sale.dollars' ordinal='2' />
+              <column datatype='integer' name='sale.volume sale.volume' ordinal='3' />
+            </columns>
+          </relation>
+          <relation connection='textscan.1j0e6y0115bsz2138ak191ygnlvn' name='project.acs.zipcodes.csv' table='[project.acs.zipcodes#csv$]' type='table'>
+            <columns gridOrigin='A1:M939:no:A1:M939:2'>
+              <column datatype='integer' name='zipcode zipcode' ordinal='0' />
+              <column datatype='real' name='high.school high.school' ordinal='1' />
+              <column datatype='real' name='bachelor bachelor' ordinal='2' />
+              <column datatype='real' name='unemployment unemployment' ordinal='3' />
+              <column datatype='integer' name='income income' ordinal='4' />
+              <column datatype='integer' name='population population' ordinal='5' />
+              <column datatype='integer' name='pop.white pop.white' ordinal='6' />
+              <column datatype='integer' name='pop.black pop.black' ordinal='7' />
+              <column datatype='integer' name='pop.indian pop.indian' ordinal='8' />
+              <column datatype='integer' name='pop.asian pop.asian' ordinal='9' />
+              <column datatype='integer' name='pop.hawai pop.hawai' ordinal='10' />
+              <column datatype='integer' name='pop.other pop.other' ordinal='11' />
+              <column datatype='integer' name='pop.multi pop.multi' ordinal='12' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <cols>
+          <map key='[bachelor bachelor]' value='[project.acs.zipcodes.csv].[bachelor bachelor]' />
+          <map key='[category category]' value='[project.sales.zipcodes.csv].[category category]' />
+          <map key='[high.school high.school]' value='[project.acs.zipcodes.csv].[high.school high.school]' />
+          <map key='[income income]' value='[project.acs.zipcodes.csv].[income income]' />
+          <map key='[pop.asian pop.asian]' value='[project.acs.zipcodes.csv].[pop.asian pop.asian]' />
+          <map key='[pop.black pop.black]' value='[project.acs.zipcodes.csv].[pop.black pop.black]' />
+          <map key='[pop.hawai pop.hawai]' value='[project.acs.zipcodes.csv].[pop.hawai pop.hawai]' />
+          <map key='[pop.indian pop.indian]' value='[project.acs.zipcodes.csv].[pop.indian pop.indian]' />
+          <map key='[pop.multi pop.multi]' value='[project.acs.zipcodes.csv].[pop.multi pop.multi]' />
+          <map key='[pop.other pop.other]' value='[project.acs.zipcodes.csv].[pop.other pop.other]' />
+          <map key='[pop.white pop.white]' value='[project.acs.zipcodes.csv].[pop.white pop.white]' />
+          <map key='[population population]' value='[project.acs.zipcodes.csv].[population population]' />
+          <map key='[sale.dollars sale.dollars]' value='[project.sales.zipcodes.csv].[sale.dollars sale.dollars]' />
+          <map key='[sale.volume sale.volume]' value='[project.sales.zipcodes.csv].[sale.volume sale.volume]' />
+          <map key='[unemployment unemployment]' value='[project.acs.zipcodes.csv].[unemployment unemployment]' />
+          <map key='[zipcode zipcode (project.acs.zipcodes.csv)]' value='[project.acs.zipcodes.csv].[zipcode zipcode]' />
+          <map key='[zipcode zipcode]' value='[project.sales.zipcodes.csv].[zipcode zipcode]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[project.sales.zipcodes.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:D4152:no:A1:D4152:2&quot;</attribute>
+              <attribute datatype='integer' name='lost'>0</attribute>
+              <attribute datatype='integer' name='outcome'>1</attribute>
+              <attribute datatype='integer' name='processed'>12450</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[project.acs.zipcodes.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:M939:no:A1:M939:2&quot;</attribute>
+              <attribute datatype='integer' name='lost'>0</attribute>
+              <attribute datatype='integer' name='outcome'>1</attribute>
+              <attribute datatype='integer' name='processed'>12163</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>zipcode zipcode</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[zipcode zipcode]</local-name>
+            <parent-name>[project.sales.zipcodes.csv]</parent-name>
+            <remote-alias>zipcode zipcode</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[project.sales.zipcodes.csv_9D7E4D0FD7F0401D9502F9580FCF6710]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>category category</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[category category]</local-name>
+            <parent-name>[project.sales.zipcodes.csv]</parent-name>
+            <remote-alias>category category</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[project.sales.zipcodes.csv_9D7E4D0FD7F0401D9502F9580FCF6710]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sale.dollars sale.dollars</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[sale.dollars sale.dollars]</local-name>
+            <parent-name>[project.sales.zipcodes.csv]</parent-name>
+            <remote-alias>sale.dollars sale.dollars</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[project.sales.zipcodes.csv_9D7E4D0FD7F0401D9502F9580FCF6710]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sale.volume sale.volume</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[sale.volume sale.volume]</local-name>
+            <parent-name>[project.sales.zipcodes.csv]</parent-name>
+            <remote-alias>sale.volume sale.volume</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[project.sales.zipcodes.csv_9D7E4D0FD7F0401D9502F9580FCF6710]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>zipcode zipcode</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[zipcode zipcode (project.acs.zipcodes.csv)]</local-name>
+            <parent-name>[project.acs.zipcodes.csv]</parent-name>
+            <remote-alias>zipcode zipcode</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[project.acs.zipcodes.csv_8738AFB49FD14425B938A32B2337FB4C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>high.school high.school</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[high.school high.school]</local-name>
+            <parent-name>[project.acs.zipcodes.csv]</parent-name>
+            <remote-alias>high.school high.school</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[project.acs.zipcodes.csv_8738AFB49FD14425B938A32B2337FB4C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>bachelor bachelor</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[bachelor bachelor]</local-name>
+            <parent-name>[project.acs.zipcodes.csv]</parent-name>
+            <remote-alias>bachelor bachelor</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[project.acs.zipcodes.csv_8738AFB49FD14425B938A32B2337FB4C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>unemployment unemployment</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[unemployment unemployment]</local-name>
+            <parent-name>[project.acs.zipcodes.csv]</parent-name>
+            <remote-alias>unemployment unemployment</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[project.acs.zipcodes.csv_8738AFB49FD14425B938A32B2337FB4C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>income income</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[income income]</local-name>
+            <parent-name>[project.acs.zipcodes.csv]</parent-name>
+            <remote-alias>income income</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[project.acs.zipcodes.csv_8738AFB49FD14425B938A32B2337FB4C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>population population</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[population population]</local-name>
+            <parent-name>[project.acs.zipcodes.csv]</parent-name>
+            <remote-alias>population population</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[project.acs.zipcodes.csv_8738AFB49FD14425B938A32B2337FB4C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pop.white pop.white</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[pop.white pop.white]</local-name>
+            <parent-name>[project.acs.zipcodes.csv]</parent-name>
+            <remote-alias>pop.white pop.white</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[project.acs.zipcodes.csv_8738AFB49FD14425B938A32B2337FB4C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pop.black pop.black</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[pop.black pop.black]</local-name>
+            <parent-name>[project.acs.zipcodes.csv]</parent-name>
+            <remote-alias>pop.black pop.black</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[project.acs.zipcodes.csv_8738AFB49FD14425B938A32B2337FB4C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pop.indian pop.indian</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[pop.indian pop.indian]</local-name>
+            <parent-name>[project.acs.zipcodes.csv]</parent-name>
+            <remote-alias>pop.indian pop.indian</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[project.acs.zipcodes.csv_8738AFB49FD14425B938A32B2337FB4C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pop.asian pop.asian</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[pop.asian pop.asian]</local-name>
+            <parent-name>[project.acs.zipcodes.csv]</parent-name>
+            <remote-alias>pop.asian pop.asian</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[project.acs.zipcodes.csv_8738AFB49FD14425B938A32B2337FB4C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pop.hawai pop.hawai</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[pop.hawai pop.hawai]</local-name>
+            <parent-name>[project.acs.zipcodes.csv]</parent-name>
+            <remote-alias>pop.hawai pop.hawai</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[project.acs.zipcodes.csv_8738AFB49FD14425B938A32B2337FB4C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pop.other pop.other</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[pop.other pop.other]</local-name>
+            <parent-name>[project.acs.zipcodes.csv]</parent-name>
+            <remote-alias>pop.other pop.other</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[project.acs.zipcodes.csv_8738AFB49FD14425B938A32B2337FB4C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pop.multi pop.multi</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[pop.multi pop.multi]</local-name>
+            <parent-name>[project.acs.zipcodes.csv]</parent-name>
+            <remote-alias>pop.multi pop.multi</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[project.acs.zipcodes.csv_8738AFB49FD14425B938A32B2337FB4C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='project.acs.zipcodes.csv' datatype='table' name='[__tableau_internal_object_id__].[project.acs.zipcodes.csv_8738AFB49FD14425B938A32B2337FB4C]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='project.sales.zipcodes.csv' datatype='table' name='[__tableau_internal_object_id__].[project.sales.zipcodes.csv_9D7E4D0FD7F0401D9502F9580FCF6710]' role='measure' type='quantitative' />
+      <column aggregation='Sum' datatype='integer' default-format='*00000' name='[zipcode zipcode (project.acs.zipcodes.csv)]' role='dimension' semantic-role='[ZipCode].[Name]' type='ordinal' />
+      <column aggregation='Sum' datatype='integer' default-format='*00000' name='[zipcode zipcode]' role='dimension' semantic-role='[ZipCode].[Name]' type='ordinal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='project.acs.zipcodes.csv' id='project.acs.zipcodes.csv_8738AFB49FD14425B938A32B2337FB4C'>
+            <properties context=''>
+              <relation connection='textscan.1j0e6y0115bsz2138ak191ygnlvn' name='project.acs.zipcodes.csv' table='[project.acs.zipcodes#csv$]' type='table'>
+                <columns gridOrigin='A1:M939:no:A1:M939:2'>
+                  <column datatype='integer' name='zipcode zipcode' ordinal='0' />
+                  <column datatype='real' name='high.school high.school' ordinal='1' />
+                  <column datatype='real' name='bachelor bachelor' ordinal='2' />
+                  <column datatype='real' name='unemployment unemployment' ordinal='3' />
+                  <column datatype='integer' name='income income' ordinal='4' />
+                  <column datatype='integer' name='population population' ordinal='5' />
+                  <column datatype='integer' name='pop.white pop.white' ordinal='6' />
+                  <column datatype='integer' name='pop.black pop.black' ordinal='7' />
+                  <column datatype='integer' name='pop.indian pop.indian' ordinal='8' />
+                  <column datatype='integer' name='pop.asian pop.asian' ordinal='9' />
+                  <column datatype='integer' name='pop.hawai pop.hawai' ordinal='10' />
+                  <column datatype='integer' name='pop.other pop.other' ordinal='11' />
+                  <column datatype='integer' name='pop.multi pop.multi' ordinal='12' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+          <object caption='project.sales.zipcodes.csv' id='project.sales.zipcodes.csv_9D7E4D0FD7F0401D9502F9580FCF6710'>
+            <properties context=''>
+              <relation connection='textscan.1j0e6y0115bsz2138ak191ygnlvn' name='project.sales.zipcodes.csv' table='[project.sales.zipcodes#csv$]' type='table'>
+                <columns character-set='UTF-8' gridOrigin='A1:D4152:no:A1:D4152:2' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='zipcode zipcode' ordinal='0' />
+                  <column datatype='string' name='category category' ordinal='1' />
+                  <column datatype='integer' name='sale.dollars sale.dollars' ordinal='2' />
+                  <column datatype='integer' name='sale.volume sale.volume' ordinal='3' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression op='[zipcode zipcode]' />
+              <expression op='[zipcode zipcode (project.acs.zipcodes.csv)]' />
+            </expression>
+            <first-end-point object-id='project.sales.zipcodes.csv_9D7E4D0FD7F0401D9502F9580FCF6710' />
+            <second-end-point object-id='project.acs.zipcodes.csv_8738AFB49FD14425B938A32B2337FB4C' />
+          </relationship>
+        </relationships>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources />
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{8DCA7853-384A-42D6-BE39-917D6F137EFC}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1n3awyt082fc9w19y1da70llcwz9].[none:zipcode:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{F4863234-390F-4172-B1C3-D866508DA243}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='384' name='Sheet 1' width='384'>
+      iVBORw0KGgoAAAANSUhEUgAAAYAAAAGACAYAAACkx7W/AAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAAFXUlEQVR4nO3VMQEAIAzAMMC/5yFjRxMF/XpnZg4AOW87AIAdBgAQZQAAUQYAEGUAAFEG
+      ABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAA
+      UQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBl
+      AABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYA
+      EGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABR
+      BgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUA
+      AFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQ
+      ZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEG
+      ABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAA
+      UQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBl
+      AABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYA
+      EGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABR
+      BgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUA
+      AFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQ
+      ZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEG
+      ABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAA
+      UQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBl
+      AABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYA
+      EGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABR
+      BgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUA
+      AFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQ
+      ZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEG
+      ABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAA
+      UQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBl
+      AABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYA
+      EGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEfFxoG/IiMv0YAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
