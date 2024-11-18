@@ -25,5 +25,5 @@ Our group has completed tasks 1 and 4. We have been working on tasks 2, 3, and 5
 
 ### Individual group member contributions: 
 
-Mikaela: I have created a variety of visualizations for the county-level data, which can be located in the "Liquor Sales Counties.twb" Tableau workbook.
+Mikaela: I have created a variety of visualizations for the county-level data, which can be located in the "Liquor Sales Counties.twb" Tableau workbook. I have also created an R-markdown file entitled "County-LevelRAnalysis.rmd," within which I contructed numerous linear models in order to estimate the causal effect of income on average dollar sales. 
 
