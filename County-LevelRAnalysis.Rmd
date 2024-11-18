@@ -1,0 +1,98 @@
+---
+title: "County-Level Analysis"
+author: "Mikaela Renaud-Lowther"
+date: "2024-11-18"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Load necessary packages
+
+```{r}
+library(tidyverse)
+library(dplyr)
+library(ggplot2)
+```
+
+
+## Importing two csv files
+
+```{r}
+salesdata <- read.csv("project.sales.counties.csv")
+ACSdata <- read.csv("project.acs.counties.csv")
+```
+
+## Creating Average Sales Data by County 
+
+```{r}
+avgsalesdata <- salesdata %>%
+  group_by(county) %>%
+  summarize(avgsalesdollars = mean(sale.dollars), 
+            avgsalesvolume = mean(sale.volume))
+```
+
+## Creating a single data frame
+
+```{r}
+countydata <- merge(ACSdata, avgsalesdata, by = "county")
+
+attach(countydata)
+```
+
+## Initial regression model
+
+```{r}
+model1 <- lm(avgsalesdollars ~ income, data = countydata)
+
+summary(model1)
+```
+## Assessing which controls to add to the model - controls must be correlated with income and have an effect on avgsalesdollars
+
+```{r}
+cor(income, high.school)
+cor(income, bachelor)
+cor(income, unemployment)
+```
+ 
+## Adding high.school and unemployment to the model as controls
+
+```{r}
+model2 <- lm(avgsalesdollars ~ income + high.school + unemployment, data = countydata)
+
+summary(model2)
+```
+
+## Incorporating race into the model 
+
+```{r}
+countydata <- countydata %>%
+  mutate(percentwhite = pop.white/population)
+```
+
+```{r}
+model3 <- lm(avgsalesdollars ~ income + high.school + unemployment + percentwhite, data = countydata)
+
+summary(model3)
+```
+
+## Adding an interaction term between income and percentwhite 
+
+```{r}
+model4 <- lm(avgsalesdollars ~ income + high.school + unemployment + percentwhite +income*percentwhite, data = countydata)
+
+summary(model4)
+```
+
+```{r}
+ggplot(countydata, aes(x = income, y = avgsalesdollars)) +
+  geom_point() +
+  ggtitle("Income ($) vs. Average Annual Sales ($)") +
+  xlab("Income ($)") +
+  ylab("Average Annual Sales")
+```
+
