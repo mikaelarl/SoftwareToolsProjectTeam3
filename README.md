@@ -23,8 +23,8 @@ Local policymakers evaluating the efficacy of alcohol excise taxes and determini
 ## Checkpoint 1 Progress
 Our group has completed tasks 1 and 4. We have been working on tasks 2, 3, and 5 (analyzing and visualizing our data in order to identify relevant trends).
 
-Individual group member contributions: 
+### Individual group member contributions: 
 
-Mikaela:
+#### Mikaela:
 I have created a variety of visualizations for the county-level data, which can be located in the "Liquor Sales Counties.twb" Tableau workbook.
 
