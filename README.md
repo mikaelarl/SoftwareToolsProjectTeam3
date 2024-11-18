@@ -12,7 +12,7 @@ Local policymakers evaluating the efficacy of alcohol excise taxes and determini
 
 ## The 8 Major Tasks
 1. Create a GitHub repository and establish best practices for team collaboration.
-2. Analayze and visualize ACS data using Tableau and/or R.
+2. Analyze and visualize ACS data using Tableau and/or R.
 3. Analyze and visualize aggregated sales data using Tableau and/or R.
 4. Merge aggregated liquor sales data with ACS data per each geography (zipcodes, cities, counties). This will result in 3 data sets. If using Tableau, create 3 workbooks.
 5. Visualize and identify patterns in liquor sales across geographies and ACS metrics using R and/or Tableau.
@@ -21,3 +21,10 @@ Local policymakers evaluating the efficacy of alcohol excise taxes and determini
 8. Publish a detailed, well-formatted R-markdown report of your analytical story to your GitHub repository (see project instructions for details).
 
 ## Checkpoint 1 Progress
+Our group has completed tasks 1 and 4. We have been working on tasks 2, 3, and 5 (analyzing and visualizing our data in order to identify relevant trends).
+
+Individual group member contributions: 
+
+Mikaela:
+I have created a variety of visualizations for the county-level data, which can be located in the "Liquor Sales Counties.twb" Tableau workbook.
+
