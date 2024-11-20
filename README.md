@@ -21,7 +21,7 @@ Local policymakers evaluating the efficacy of alcohol excise taxes and determini
 8. Publish a detailed, well-formatted R-markdown report of your analytical story to your GitHub repository (see project instructions for details).
 
 ## Checkpoint 1 Progress
-Our group has completed tasks 1 and 4. We have been working on tasks 2, 3, and 5 (analyzing and visualizing our data in order to identify relevant trends).
+Our group has completed tasks 1 and 4. We have been working on tasks 2, 3, and 5 (analyzing and visualizing our data in order to identify relevant trends). We are finding using GitHub as a collaborative platform to be quite helpful for aiding our work as a group. It is also useful in tracking individual changes and progress. 
 
 ### Individual group member contributions: 
 
