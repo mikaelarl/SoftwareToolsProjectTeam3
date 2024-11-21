@@ -28,3 +28,6 @@ Our group has completed tasks 1 and 4. We have been working on tasks 2, 3, and 5
 Mikaela: I have created a variety of visualizations for the county-level data, which can be located in the "Liquor Sales Counties.twb" Tableau workbook. I have also created an R-markdown file entitled "County-LevelRAnalysis.rmd," within which I constructed numerous linear models in order to estimate the causal effect of income on average dollar sales. 
 
 Paul: I have merged the aggregated liquor sales data with ACS data per each geography (zip codes, cities, counties) and uploaded these 3 new data sets using Tableau as 3 individual workbooks to Github, to help with completing additional major project tasks.
+
+Mick: I created a heat map in Tableau that illustrates how the income of different zip codes differ throughout Iowa. I also
+wrote an analysis to make conclusions and observations pertaining to the heat map, specifically relating to income "hot spots" and the significance of Iowa's geography when considering income and alcohol consumption.
