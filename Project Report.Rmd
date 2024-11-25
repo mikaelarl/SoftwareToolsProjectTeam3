@@ -1,0 +1,22 @@
+---
+title: "ADEC 7900 Course Project Report"
+author: "Team 3"
+date: "2024-12-11"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# 1. Introduction
+
+# 2. Data Summary
+
+# 3. Data Analytics
+
+# 4. Conclusion 
+
+# 5. Policy Analytics 
