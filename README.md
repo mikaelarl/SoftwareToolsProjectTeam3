@@ -5,10 +5,12 @@
 #### Paul Gaski, Michael Pomer, Mikaela Renaud-Lowther, and Justin Nevins
 
 ## Research Topic
-### The question: 
+### The Question: 
 To what extent does an individual's income affect their consumption of alcohol in Iowa?
-### The Decision-Maker and the Decision To-Be-Made
+### The Decision-Maker and the Decision To-Be-Made:
 Local policymakers evaluating the efficacy of alcohol excise taxes and determining future levels of these taxes
+### The Data:
+The current analysis will employ two main categories of data from two different data sources: data on the sale of liquors in Iowa from the Iowa Department of Revenue and data capturing Iowa's demographic and economic characteristics from the American Community Survey. Both of these sources record three levels of geographic specificity, providing data at the county-, city-, and zip-code- level. Key variables within the data (namely "income," "population," "sale.dollars," and "sale.volume") having been observed across different geographical levels will be an important asset for our analysis. 
 
 ## The 8 Major Tasks
 1. Create a GitHub repository and establish best practices for team collaboration.
