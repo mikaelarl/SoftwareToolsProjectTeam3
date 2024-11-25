@@ -35,3 +35,5 @@ wrote an analysis to make conclusions and observations pertaining to the heat ma
 ## Checkpoint 2 Progress
 
 ### Checkpoint 2 Individual Group Member Contributions
+
+Mikaela: I created similar visualizations for the city- and zip-code-level data as I created for the county-level data. These visualizations can be located in the "Liquor Sales Cities.twb" and "Liquor Sales Zip-Codes.twb" Tableau worksheets, respectively, within the Team_3Checkpoint_2.0 Branch.
