@@ -23,7 +23,7 @@ Local policymakers evaluating the efficacy of alcohol excise taxes and determini
 ## Checkpoint 1 Progress
 Our group has completed tasks 1 and 4. We have been working on tasks 2, 3, and 5 (analyzing and visualizing our data in order to identify relevant trends). We are finding using GitHub as a collaborative platform to be quite helpful for aiding our work as a group. It is also useful in tracking individual changes and progress. 
 
-### Individual group member contributions: 
+### Checkpoint 1 Individual Group Member Contributions: 
 
 Mikaela: I have created a variety of visualizations for the county-level data, which can be located in the "Liquor Sales Counties.twb" Tableau workbook. I have also created an R-markdown file entitled "County-LevelRAnalysis.rmd," within which I constructed numerous linear models in order to estimate the causal effect of income on average dollar sales. 
 
@@ -31,3 +31,7 @@ Paul: I have merged the aggregated liquor sales data with ACS data per each geog
 
 Mick: I created a heat map in Tableau that illustrates how the income of different zip codes differ throughout Iowa. I also
 wrote an analysis to make conclusions and observations pertaining to the heat map, specifically relating to income "hot spots" and the significance of Iowa's geography when considering income and alcohol consumption.
+
+## Checkpoint 2 Progress
+
+### Checkpoint 2 Individual Group Member Contributions
