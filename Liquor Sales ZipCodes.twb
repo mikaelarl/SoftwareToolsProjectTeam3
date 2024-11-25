@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8' ?>
 
-<!-- build 20232.24.0812.0905                               -->
-<workbook original-version='18.1' source-build='2023.2.12 (20232.24.0812.0905)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+<!-- build 20242.24.0807.0327                               -->
+<workbook original-version='18.1' source-build='2024.2.2 (20242.24.0807.0327)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
   <document-format-change-manifest>
     <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
     <MapboxVectorStylesAndLayers />
@@ -26,7 +26,7 @@
       <connection class='federated'>
         <named-connections>
           <named-connection caption='project.sales.zipcodes' name='textscan.1j0e6y0115bsz2138ak191ygnlvn'>
-            <connection class='textclean' cleaning='yes' compat='no' csvFile='/Users/pg5/Desktop/PG Files/BC/1-Semesters/Fall 2024/ADEC7900/Course Project/project.data/project.sales.zipcodes.csv' dataRefreshTime='' directory='/Users/pg5/Desktop/PG Files/BC/1-Semesters/Fall 2024/ADEC7900/Course Project/project.data' filename='/var/folders/4p/kdvmt33j5mqblwks4rx07l_m0000gn/T/tableau-temp/0uzuaol1coenev17osrbo08e53mg/project.sales.zipcodes.csv.xlsx' interpretationMode='8' password='' server='' validate='no' />
+            <connection class='textclean' cleaning='yes' compat='no' csvFile='/Users/mikaela/Desktop/SoftwareToolsProjectTeam3-Team_3Checkpoint_1.0/project.sales.zipcodes.csv' dataRefreshTime='' directory='/Users/pg5/Desktop/PG Files/BC/1-Semesters/Fall 2024/ADEC7900/Course Project/project.data' filename='/var/folders/h5/g20p2m3s6z9c9l1dg89v83340000gn/T/tableau-temp/0ytqz2009tpphc14u7th70ztc577/project.sales.zipcodes.csv.xlsx' interpretationMode='8' password='' server='' validate='no' />
           </named-connection>
         </named-connections>
         <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1j0e6y0115bsz2138ak191ygnlvn' name='project.acs.zipcodes.csv' table='[project.acs.zipcodes#csv$]' type='table'>
@@ -387,8 +387,23 @@
       <aliases enabled='yes' />
       <_.fcp.ObjectModelTableType.true...column caption='project.acs.zipcodes.csv' datatype='table' name='[__tableau_internal_object_id__].[project.acs.zipcodes.csv_8738AFB49FD14425B938A32B2337FB4C]' role='measure' type='quantitative' />
       <_.fcp.ObjectModelTableType.true...column caption='project.sales.zipcodes.csv' datatype='table' name='[__tableau_internal_object_id__].[project.sales.zipcodes.csv_9D7E4D0FD7F0401D9502F9580FCF6710]' role='measure' type='quantitative' />
+      <column caption='bachelor' datatype='real' name='[bachelor bachelor]' role='measure' type='quantitative' />
+      <column caption='category' datatype='string' name='[category category]' role='dimension' type='nominal' />
+      <column caption='high.school' datatype='real' name='[high.school high.school]' role='measure' type='quantitative' />
+      <column caption='income' datatype='integer' name='[income income]' role='measure' type='quantitative' />
+      <column caption='pop.asian' datatype='integer' name='[pop.asian pop.asian]' role='measure' type='quantitative' />
+      <column caption='pop.black' datatype='integer' name='[pop.black pop.black]' role='measure' type='quantitative' />
+      <column caption='pop.hawai' datatype='integer' name='[pop.hawai pop.hawai]' role='measure' type='quantitative' />
+      <column caption='pop.indian' datatype='integer' name='[pop.indian pop.indian]' role='measure' type='quantitative' />
+      <column caption='pop.multi' datatype='integer' name='[pop.multi pop.multi]' role='measure' type='quantitative' />
+      <column caption='pop.other' datatype='integer' name='[pop.other pop.other]' role='measure' type='quantitative' />
+      <column caption='pop.white' datatype='integer' name='[pop.white pop.white]' role='measure' type='quantitative' />
+      <column caption='population' datatype='integer' name='[population population]' role='measure' type='quantitative' />
+      <column caption='sale.dollars' datatype='integer' name='[sale.dollars sale.dollars]' role='measure' type='quantitative' />
+      <column caption='sale.volume' datatype='integer' name='[sale.volume sale.volume]' role='measure' type='quantitative' />
+      <column caption='unemployment' datatype='real' name='[unemployment unemployment]' role='measure' type='quantitative' />
       <column aggregation='Sum' datatype='integer' default-format='*00000' name='[zipcode zipcode (project.acs.zipcodes.csv)]' role='dimension' semantic-role='[ZipCode].[Name]' type='ordinal' />
-      <column aggregation='Sum' datatype='integer' default-format='*00000' name='[zipcode zipcode]' role='dimension' semantic-role='[ZipCode].[Name]' type='ordinal' />
+      <column aggregation='Sum' caption='zipcode' datatype='integer' default-format='*00000' name='[zipcode zipcode]' role='dimension' semantic-role='[ZipCode].[Name]' type='ordinal' />
       <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
       <semantic-values>
         <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
