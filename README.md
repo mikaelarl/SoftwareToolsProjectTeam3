@@ -44,3 +44,6 @@ Mikaela: I created similar visualizations for the city- and zip-code-level data 
 Paul: I have focused on Cities based analysis for this Checkpoint, as County and Zip Code analysis are being worked on by other group members. I have built out a Tableau file with multiple Dashboards and a Story focused on visualizing Iowa Cities Income and Liquor Consumption behaviors.
 
 Justin: For this Checkpoint, I have focused on R level analysis where I merged ACS and liquor sales data for both zip codes and cities. From there, I created visualizations of certain summary statistics to begin to understand the relationships between variables. I addittionally created numerous correlations and correlation heatmaps to show the effect that certain variables had on others. Finally I developed in depth regression models that incorporate important demographics that explain statistical significance towards liquor sales. These models have the additional capability to predict liquor sales based on these particular demographics. I include the R markdown files as well as the html outputs that show these visualizations. 
+
+Mick: Analyzed merged dataset for alcohol consumption pertaining to zip codes in the report file. Singled out particular 
+data points that were deemed to be excursions and made conclusions about basic trends related to the central research question. 
