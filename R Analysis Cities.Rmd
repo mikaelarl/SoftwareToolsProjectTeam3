@@ -1,0 +1,194 @@
+---
+title: "R Analysis Cities"
+author: "Justin Nevins"
+date: "2024-11-27"
+output:
+  html_document:
+    df_print: paged
+---
+
+```{r}
+
+library(pillar)
+library(ggplot2)
+library(plotly)
+library(psych)
+library(naniar)
+library(tidyr)
+library(stargazer)
+library(dplyr)
+library(corrplot)
+library(ggcorrplot)
+library(MASS)
+library(glm2)
+library(pscl)
+library(gridExtra)
+
+## Load your data for cities
+df1 <- read.csv("C:/project.acs.cities.csv")  # ACS data for cities
+df2 <- read.csv("c:/project.sales.cities.csv")  # Liquor sales data for cities
+
+# Merge the city-level data
+merged_data <- merge(df1, df2, by = "city", all = TRUE)
+
+# Save the merged dataset for cities
+write.csv(merged_data, "C:/Users/jnevs/OneDrive/desktop/project.cities.csv", row.names = FALSE)
+
+# Load the merged data for cities
+df <- read.csv("C:/Users/jnevs/OneDrive/desktop/project.cities.csv")
+
+## Set the seed for reproducibility
+set.seed(123)
+
+## Generate a vector of indices for the training set
+train_index <- sample(x = nrow(df), size = round(0.8 * nrow(df)))
+
+## Create the training and testing sets
+train_data <- df[train_index, ]
+test_data  <- df[-train_index, ]
+
+train_data$sales_per_capita <- train_data$sale.dollars / train_data$population
+
+## Snapshot of Data set
+glimpse(train_data)
+
+head(train_data, 10)
+
+# Summary statistics of the city-level data
+stargazer(df, 
+          type = "text", 
+          summary = TRUE, 
+          digits = 2,
+          title = "Summary Statistics of City Data",
+          out = "summary_statistics_cities.txt")
+
+# Summary of the training data
+summary(train_data)
+
+# Plot histogram of income distribution for cities
+hist(train_data$income, breaks = 30, col = "blue", main = "Income Distribution (Cities)", xlab = "Income")
+
+library(ggplot2)
+
+# Sales Volume by Category (City-level)
+ggplot(merged_data, aes(x = category, y = sale.volume)) +
+  geom_boxplot() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
+  labs(title = "Sales Volume by Category (Cities)", x = "Category", y = "Sales Volume")
+
+# Check correlation between liquor sales and socioeconomic factors
+cor(train_data$sale.dollars, train_data$income, use = "complete.obs")
+cor(train_data$sale.dollars, train_data$unemployment, use = "complete.obs")
+cor(train_data$sale.dollars, train_data$bachelor, use = "complete.obs")
+
+# Histogram of liquor sales (Cities)
+ggplot(train_data, aes(x = sale.dollars)) +
+  geom_histogram(binwidth = 5000, fill = "blue", color = "black", alpha = 0.7) +
+  labs(title = "Distribution of Liquor Sales (Cities)", x = "Liquor Sales ($)", y = "Frequency")
+
+# Sales vs Income for cities
+ggplot(train_data, aes(x = income, y = sale.dollars)) +
+  geom_point(color = "darkgreen") +
+  geom_smooth(method = "lm", se = FALSE, color = "red") +
+  labs(title = "Liquor Sales vs Income (Cities)", x = "Income ($)", y = "Liquor Sales ($)")
+
+# Sales vs Unemployment for cities
+ggplot(train_data, aes(x = unemployment, y = sale.dollars)) +
+  geom_point(color = "purple") +
+  geom_smooth(method = "lm", se = FALSE, color = "red") +
+  labs(title = "Liquor Sales vs Unemployment Rate (Cities)", x = "Unemployment Rate (%)", y = "Liquor Sales ($)")
+
+# Sales vs Population for cities
+ggplot(train_data, aes(x = population, y = sale.dollars)) +
+  geom_point(color = "orange") +
+  geom_smooth(method = "lm", se = FALSE, color = "red") +
+  labs(title = "Liquor Sales vs Population (Cities)", x = "Population", y = "Liquor Sales ($)")
+
+# Sales by High School Education (Cities)
+ggplot(train_data, aes(x = high.school, y = sale.dollars)) +
+  geom_boxplot(fill = "lightblue") +
+  labs(title = "Liquor Sales by High School Education (%) (Cities)", x = "High School (%)", y = "Liquor Sales ($)")
+
+# Sales by Bachelor's Degree (Cities)
+ggplot(train_data, aes(x = bachelor, y = sale.dollars)) +
+  geom_boxplot(fill = "lightcoral") +
+  labs(title = "Liquor Sales by Bachelor's Degree (%) (Cities)", x = "Bachelor's Degree (%)", y = "Liquor Sales ($)")
+
+# Sales by Category (Cities)
+ggplot(train_data, aes(x = category, y = sale.dollars)) +
+  geom_boxplot(fill = "lightgreen") +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
+  labs(title = "Liquor Sales by Category (Cities)", x = "Category", y = "Liquor Sales ($)")
+
+# Sales vs White Population (Cities)
+ggplot(train_data, aes(x = pop.white, y = sale.dollars)) +
+  geom_boxplot(fill = "skyblue") +
+  labs(title = "Liquor Sales vs White Population (Cities)", x = "White Population", y = "Liquor Sales ($)")
+
+# Sales vs Black Population (Cities)
+ggplot(train_data, aes(x = pop.black, y = sale.dollars)) +
+  geom_boxplot(fill = "orange") +
+  labs(title = "Liquor Sales vs Black Population (Cities)", x = "Black Population", y = "Liquor Sales ($)")
+
+# Pairwise plot of some key variables for cities
+library(GGally)
+ggpairs(train_data[, c("sale.dollars", "income", "unemployment", "population", "high.school", "bachelor")])
+
+# Correlation Heatmap (Cities)
+library(ggcorrplot)
+cor_matrix <- cor(train_data[, c("sale.dollars", "income", "unemployment", "population", "high.school", "bachelor")], use = "complete.obs")
+ggcorrplot(cor_matrix, lab = TRUE, method = "circle")
+
+# Sales vs Income & Population, Facet by Category (Cities)
+ggplot(train_data, aes(x = income, y = sale.dollars)) +
+  geom_point() +
+  facet_wrap(~ category) +
+  labs(title = "Liquor Sales vs Income, by Category (Cities)", x = "Income ($)", y = "Liquor Sales ($)")
+
+# Simple Linear Regression for cities: Liquor Sales vs Income
+simple_model <- lm(sale.dollars ~ income, data = train_data)
+summary(simple_model)
+
+# Visualize the regression line for cities
+ggplot(train_data, aes(x = income, y = sale.dollars)) +
+  geom_point(color = "blue") +
+  geom_smooth(method = "lm", se = FALSE, color = "red") +
+  labs(title = "Liquor Sales vs Income (Simple Regression - Cities)", x = "Income ($)", y = "Liquor Sales ($)")
+
+# Multiple Linear Regression for cities: Liquor Sales vs Income, Population, Unemployment, and Education
+multiple_model <- lm(sale.dollars ~ income + population + unemployment + high.school + bachelor, data = train_data)
+summary(multiple_model)
+
+# Visualize the relationship between predicted liquor sales and actual sales for cities
+train_data$predicted_sales <- predict(multiple_model, train_data)
+
+ggplot(train_data, aes(x = predicted_sales, y = sale.dollars)) +
+  geom_point(color = "green") +
+  geom_smooth(method = "lm", se = FALSE, color = "red") +
+  labs(title = "Predicted vs Actual Liquor Sales (Multiple Regression - Cities)", x = "Predicted Liquor Sales", y = "Actual Liquor Sales ($)")
+
+# Interaction Model for cities: Liquor Sales vs. Income and Population Interaction
+interaction_model <- lm(sale.dollars ~ income * population, data = train_data)
+summary(interaction_model)
+
+# Visualize the interaction effect for cities
+ggplot(train_data, aes(x = income, y = sale.dollars, color = population)) +
+  geom_point() +
+  geom_smooth(method = "lm", se = FALSE, aes(color = population)) +
+  labs(title = "Liquor Sales vs Income & Population (Interaction Model - Cities)", x = "Income ($)", y = "Liquor Sales ($)")
+
+# Log-transformed Regression for cities: Liquor Sales (log) vs. Income, Population, and Education
+log_model <- lm(log(sale.dollars) ~ income + population + high.school + bachelor, data = train_data)
+summary(log_model)
+
+# Visualize the predicted log-transformed sales for cities
+train_data$log_predicted_sales <- predict(log_model, train_data)
+
+ggplot(train_data, aes(x = log_predicted_sales, y = log(sale.dollars))) +
+  geom_point(color = "purple") +
+  geom_smooth(method = "lm", se = FALSE, color = "red") +
+  labs(title = "Log-Transformed Liquor Sales vs Predicted Sales (Cities)", x = "Predicted Log Sales", y = "Log Liquor Sales")
+
+
+```
+
