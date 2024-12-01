@@ -50,4 +50,8 @@ Paul: I have focused on Cities based analysis for this Checkpoint, as County and
 Justin: For this Checkpoint, I have focused on R level analysis where I merged ACS and liquor sales data for both zip codes and cities. From there, I created visualizations of certain summary statistics to begin to understand the relationships between variables. I addittionally created numerous correlations and correlation heatmaps to show the effect that certain variables had on others. Finally I developed in depth regression models that incorporate important demographics that explain statistical significance towards liquor sales. These models have the additional capability to predict liquor sales based on these particular demographics. I include the R markdown files as well as the html outputs that show these visualizations. 
 
 Mick: Analyzed merged dataset for alcohol consumption pertaining to zip codes in the report file. Singled out particular 
-data points that were deemed to be excursions and made conclusions about basic trends related to the central research question. 
+data points that were deemed to be excursions and made conclusions about basic trends related to the central research question.
+
+## Further Progress
+
+Mikaela: Using the visualiazations I had previously created in Tableau, I created dashboards on Tableau Public to summarize some of the key trends in Income and Liquor Sales by Liquor Category. These public dashboards can be accessed at the link provided at the top of this README.md file, under the "Important Deliverables" section. 
