@@ -1,8 +1,12 @@
-# Software Tools Project - Team 3
-
-## ADEC 7900 Software Tools for Data Analysis Group Project
-### Team 3
+# ADEC 7900 Software Tools Project - Team 3
 #### Paul Gaski, Michael Pomer, Mikaela Renaud-Lowther, and Justin Nevins
+
+## Important Deliverables 
+### Project Report:
+Our group project report, entitled "Project Report.rmd" can be located in the main branch. 
+
+### Dashboards on Tableau Public:
+Dashboards pertaining to our analysis can be accessed on Tableau Public at the following link: https://public.tableau.com/app/profile/mikaela.renaud.lowther/vizzes 
 
 ## Research Topic
 ### The Question: 
