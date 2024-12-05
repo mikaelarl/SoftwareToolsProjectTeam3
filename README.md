@@ -57,11 +57,17 @@ Let's take a closer look at the geographical distribution of both income and liq
 Based on the stepped color encoding utilized within these two map visualizations, it appears as though there is a broad (though imperfect) relationship between median income and liquor sales for Iowa counties. Namely, regions with higher levels of income seem to also have higher annual liquor sales, per examination of the above dashboard (an interactive version of which can be found on the Tableau Public page linked at the beginning of this report). For example, Polk County, for which median income is relatively high, has particularly high annual liquor sales. However, this relationship is imperfect: Dallas County, which is in the highest income category, is actually in the lowest category for annual liquor sales, per the data visualization's stepped coloring. Nonetheless, it does seem that income and liquor sales do tend to adhere to a similar overall geographical pattern across the state of Iowa: low-income regions seem to generally exhibit lower liquor sales than high-income regions. 
 
 
-INCOME-SALES DASHBOARDS:
+Having established these general geopgraphical trends, let us examine the potential impact of income on liquor sales a bit more closely. Dashboards capturing the relationship between income and liquor sales at the county, city, and zip-code levels can be accessed below:
 
 <img width="1042" alt="Income-Sales Dashboard (Counties)" src = "https://github.com/mikaelarl/SoftwareToolsProjectTeam3/tree/main/countiesincome-salesdash.png">
 <img width="1042" alt="Income-Sales Dashboard (Cities)" src = "https://github.com/mikaelarl/SoftwareToolsProjectTeam3/tree/main/citiesincome-salesdash.png">
 <img width="1042" alt="Income-Sales Dashboard (Zip Codes)" src = "https://github.com/mikaelarl/SoftwareToolsProjectTeam3/tree/main/zipincome-salesdash.png">
+
+First consider the county-level dashboard: 
+
+<p align = "center">
+<img width="1221" alt="" src="https://github.com/user-attachments/assets/fa788713-8ef5-4f56-8952-24fae8bcb525"/>
+</p>
 
 
 When looking at the merged dataset detailing income and alcohol consumption on the zip code level, it appears that most of the data reflects a relatively low amount of alcohol sales for Iowa residents residing in zip codes with an average income less than $20,000 and over $35,000. Those making incomes between $20,000 and $35,000 have higher alcohol sales volume per capita relative to residents of other zip codes with differing average income, and that contrast is heightened even further when considering alcohol sales in dollars per capita. The overwhelming majority of the data set is clustered towards low consumption of alcohol on a volume and dollars level, however there are a series of outliers for zip codes with an average income of $20,000-$35,000 as previously mentioned. Certain zip codes are not all that surprising, specifically zip codes 52401 and 50314 which represent the large cities Cedar Rapids and Des Moines respectively. Other zip codes such as 50033 (Madison County) and 51101 (Sioux City) also deviate from the norm of the dataset in having extremely high levels of spending on alcohol relative to their average salary, although part of this disparity might be attributable to their low population size. 
