@@ -32,7 +32,7 @@ When looking at the merged dataset detailing income and alcohol consumption on t
 
 ![alt text](https://github.com/mikaelarl/SoftwareToolsProjectTeam3/tree/main/countiesincomedist.png)
 
-<img width="1042" alt="zipincomedist" src = "[https://github.com/mikaelarl/SoftwareToolsProjectTeam3/blob/main/Income%20Histogram%20(Zip%20Codes).png]">
+<img width="1042" alt="Income Histogram (Zip Codes)" src = "[https://github.com/mikaelarl/SoftwareToolsProjectTeam3/blob/main/Income%20Histogram%20(Zip%20Codes).png]">
 
 ## 4. Conclusion
 
