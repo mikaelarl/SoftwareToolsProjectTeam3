@@ -38,10 +38,27 @@ As the captured by the histogram above, which displays a nearly bell-shaped dist
 
 Also examine the distribution of income for the next highest level of graphic specificity, the city level. 
 <p align = "center">
-<img width="1040" alt="citiesincomedist" src="https://github.com/user-attachments/assets/b25fd30e-2190-43a3-a8f3-509829e004d6"/>
+<img width="800" alt="citiesincomedist" src="https://github.com/user-attachments/assets/b25fd30e-2190-43a3-a8f3-509829e004d6"/>
 </p>
 
 This histogram, which capture the distribution of median income at the city level, points to a slightly right-skewed distribution. With a right-, or positively- skewed distribution, most of the data lies at the lower end of the distribution, with some extreme values on the high-end of the distribution. For this type of distribution, the mean is often greater than the median, since the mean is sensitive to these extreme values. 
+
+Next, let's examine the geographical distribution of both income and liquor sales ($) across the state of Iowa. Dashboards displaying the these geographical distributions at the zip-code, city, and county levels can be found below:
+
+<img width="1042" alt="Maps Dashboard (Counties)" src = "https://github.com/mikaelarl/SoftwareToolsProjectTeam3/tree/main/countiesmapsdash.png">
+<img width="1042" alt="Maps Dashboard (Cities)" src = "https://github.com/mikaelarl/SoftwareToolsProjectTeam3/tree/main/citiesmapsdash.png">
+<img width="1042" alt="Maps Dashboard (Zip Codes)" src = "https://github.com/mikaelarl/SoftwareToolsProjectTeam3/tree/main/zipmapsdash">
+
+Let's take a closer look at the geographical distribution of both income and liquor sales ($) in Iowa at the county level.
+<p align = "center">
+<img width="900" alt="" src="https://github.com/user-attachments/assets/1d95e265-5326-43f0-b49f-86476612e2fe"/>
+</p>
+
+INCOME-SALES DASHBOARDS:
+
+<img width="1042" alt="Income-Sales Dashboard (Counties)" src = "https://github.com/mikaelarl/SoftwareToolsProjectTeam3/tree/main/countiesincome-salesdash.png">
+<img width="1042" alt="Income-Sales Dashboard (Cities)" src = "https://github.com/mikaelarl/SoftwareToolsProjectTeam3/tree/main/citiesincome-salesdash.png">
+<img width="1042" alt="Income-Sales Dashboard (Zip Codes)" src = "https://github.com/mikaelarl/SoftwareToolsProjectTeam3/tree/main/zipincome-salesdash">
 
 
 When looking at the merged dataset detailing income and alcohol consumption on the zip code level, it appears that most of the data reflects a relatively low amount of alcohol sales for Iowa residents residing in zip codes with an average income less than $20,000 and over $35,000. Those making incomes between $20,000 and $35,000 have higher alcohol sales volume per capita relative to residents of other zip codes with differing average income, and that contrast is heightened even further when considering alcohol sales in dollars per capita. The overwhelming majority of the data set is clustered towards low consumption of alcohol on a volume and dollars level, however there are a series of outliers for zip codes with an average income of $20,000-$35,000 as previously mentioned. Certain zip codes are not all that surprising, specifically zip codes 52401 and 50314 which represent the large cities Cedar Rapids and Des Moines respectively. Other zip codes such as 50033 (Madison County) and 51101 (Sioux City) also deviate from the norm of the dataset in having extremely high levels of spending on alcohol relative to their average salary, although part of this disparity might be attributable to their low population size. 
