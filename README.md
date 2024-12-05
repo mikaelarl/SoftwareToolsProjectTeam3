@@ -27,7 +27,7 @@ When looking at the merged dataset detailing income and alcohol consumption on t
 
 ![alt text](http://url/to/img.png)
 
-![alt text](https://github.com/mikaelarl/SoftwareToolsProjectTeam3/tree/main/countiesincomedist.jpg?raw=true)
+![alt text](https://github.com/mikaelarl/SoftwareToolsProjectTeam3/tree/main/countiesincomedist.png?raw=true)
 
 ## 4. Conclusion
 
