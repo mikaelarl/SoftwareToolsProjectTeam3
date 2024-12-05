@@ -29,10 +29,19 @@ It might first be helpful to examine the distribution of our main causal variabl
 <img width="1042" alt="Income Distribution (Cities)" src = "https://github.com/mikaelarl/SoftwareToolsProjectTeam3/tree/main/citiesincomedist.png">
 <img width="1042" alt="Income Distribution (Zip Codes)" src = "https://github.com/mikaelarl/SoftwareToolsProjectTeam3/tree/main/zipincomedist.png">
 
-Let's examine the distribution of income for the highest level of geographic specificity: the zip-code level. 
+Let's examine the distribution of income for the highest level of geographic specificity, the zip-code level. 
 <p align = "center">
 <img width="800" alt="zipincomedist" src="https://github.com/user-attachments/assets/adcd88b5-20fb-4be0-8ec0-431b6331eef8"/>
 </p>
+
+As the captured by the histogram above, which displays a nearly bell-shaped distribution, median income seems to be fairly normal at the zip-code level. Further, the center of this distribution appears to lie around $30,000 to $33,000 per year. Note that there are some extreme values on both the high and low ends of the distribution, as is often characteristic of a normal bell-curve. 
+
+Also examine the distribution of income for the next highest level of graphic specificity, the city level. 
+<p align = "center">
+<img width="1040" alt="citiesincomedist" src="https://github.com/user-attachments/assets/b25fd30e-2190-43a3-a8f3-509829e004d6"/>
+</p>
+
+This histogram, which capture the distribution of median income at the city level, points to a slightly right-skewed distribution. With a right-, or positively- skewed distribution, most of the data lies at the lower end of the distribution, with some extreme values on the high-end of the distribution. For this type of distribution, the mean is often greater than the median, since the mean is sensitive to these extreme values. 
 
 
 When looking at the merged dataset detailing income and alcohol consumption on the zip code level, it appears that most of the data reflects a relatively low amount of alcohol sales for Iowa residents residing in zip codes with an average income less than $20,000 and over $35,000. Those making incomes between $20,000 and $35,000 have higher alcohol sales volume per capita relative to residents of other zip codes with differing average income, and that contrast is heightened even further when considering alcohol sales in dollars per capita. The overwhelming majority of the data set is clustered towards low consumption of alcohol on a volume and dollars level, however there are a series of outliers for zip codes with an average income of $20,000-$35,000 as previously mentioned. Certain zip codes are not all that surprising, specifically zip codes 52401 and 50314 which represent the large cities Cedar Rapids and Des Moines respectively. Other zip codes such as 50033 (Madison County) and 51101 (Sioux City) also deviate from the norm of the dataset in having extremely high levels of spending on alcohol relative to their average salary, although part of this disparity might be attributable to their low population size. 
