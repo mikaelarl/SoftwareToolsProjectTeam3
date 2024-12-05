@@ -47,7 +47,7 @@ Next, let's examine the geographical distribution of both income and liquor sale
 
 <img width="1042" alt="Maps Dashboard (Counties)" src = "https://github.com/mikaelarl/SoftwareToolsProjectTeam3/tree/main/countiesmapsdash.png">
 <img width="1042" alt="Maps Dashboard (Cities)" src = "https://github.com/mikaelarl/SoftwareToolsProjectTeam3/tree/main/citiesmapsdash.png">
-<img width="1042" alt="Maps Dashboard (Zip Codes)" src = "https://github.com/mikaelarl/SoftwareToolsProjectTeam3/tree/main/zipmapsdash">
+<img width="1042" alt="Maps Dashboard (Zip Codes)" src = "https://github.com/mikaelarl/SoftwareToolsProjectTeam3/tree/main/zipmapsdash.png">
 
 Let's take a closer look at the geographical distribution of both income and liquor sales ($) in Iowa at the county level.
 <p align = "center">
@@ -58,7 +58,7 @@ INCOME-SALES DASHBOARDS:
 
 <img width="1042" alt="Income-Sales Dashboard (Counties)" src = "https://github.com/mikaelarl/SoftwareToolsProjectTeam3/tree/main/countiesincome-salesdash.png">
 <img width="1042" alt="Income-Sales Dashboard (Cities)" src = "https://github.com/mikaelarl/SoftwareToolsProjectTeam3/tree/main/citiesincome-salesdash.png">
-<img width="1042" alt="Income-Sales Dashboard (Zip Codes)" src = "https://github.com/mikaelarl/SoftwareToolsProjectTeam3/tree/main/zipincome-salesdash">
+<img width="1042" alt="Income-Sales Dashboard (Zip Codes)" src = "https://github.com/mikaelarl/SoftwareToolsProjectTeam3/tree/main/zipincome-salesdash.png">
 
 
 When looking at the merged dataset detailing income and alcohol consumption on the zip code level, it appears that most of the data reflects a relatively low amount of alcohol sales for Iowa residents residing in zip codes with an average income less than $20,000 and over $35,000. Those making incomes between $20,000 and $35,000 have higher alcohol sales volume per capita relative to residents of other zip codes with differing average income, and that contrast is heightened even further when considering alcohol sales in dollars per capita. The overwhelming majority of the data set is clustered towards low consumption of alcohol on a volume and dollars level, however there are a series of outliers for zip codes with an average income of $20,000-$35,000 as previously mentioned. Certain zip codes are not all that surprising, specifically zip codes 52401 and 50314 which represent the large cities Cedar Rapids and Des Moines respectively. Other zip codes such as 50033 (Madison County) and 51101 (Sioux City) also deviate from the norm of the dataset in having extremely high levels of spending on alcohol relative to their average salary, although part of this disparity might be attributable to their low population size. 
