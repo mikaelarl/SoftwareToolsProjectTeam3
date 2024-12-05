@@ -81,7 +81,9 @@ It may also be useful to consider whether or not these trends persist across dif
 
 As with the county-level dashboard, the two side-by-side bar charts at the top of the dashboard capture the sales by liquor category, measured in both US$ and liters. The top three sales performers and bottom sales performer are consistent between the county- and zip-code levels: the top three sales performers (in order) are whiskey, vodka, and rum, and the bottom sales performer is amaretto. As was the case at the county-level, these rankings are consistent across sales measures (dollars and liters). 
 
-Discussion of the two scatter plots at the bottom of the dashboard, in comparison to the scatterplots displayed in the county-level dashboard, is perhaps more interesting. Unlike at the county-level, the linear trend line in the lefthand scatter diagram has a positive slope, suggesting that there is a negative relationship between median and income and annual liquor sales, measured in US$. 
+Discussion of the two scatter plots at the bottom of the dashboard, in comparison to the scatterplots displayed in the county-level dashboard, is perhaps more interesting. Unlike at the county-level, the linear trend line in the lefthand scatter diagram has a positive slope, suggesting that there is a negative relationship between median income and annual liquor sales, as measured in US$. In other words, the zip-code level data suggests, generally, that as median income increases, annual liquor sales decrease. This negative relationship is further affirmed by the right-hand scatter diagram, which displays the relationship between income and liquor sales in per-capita terms. 
+
+Hence, while at the broadest level of geographical specificity within the dataset, there seems to be a positive relationship between income and liquor sales, this relationship does not neccessary hold as the data is deaggregated into city- and zip-code- levels of specificity. 
 
 ___
 
