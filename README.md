@@ -85,17 +85,26 @@ Discussion of the two scatter plots at the bottom of the dashboard, in compariso
 
 Hence, while at the broadest level of geographical specificity within the dataset, there seems to be a positive relationship between income and liquor sales, this relationship does not neccessary hold as the data is deaggregated into city- and zip-code- levels of specificity. 
 
-DISCUSS: WHY MIGHT THIS BE? POSITIVE AT COUNTY-LEVEL BUT NEGATIVE AT ZIP-CODE LEVEL? - IMPLICATIONS FOR ANALYSIS? - could mean that taxes should be county-level specific - counties with higher income have higher alcohol excise taxes
-
-DISCUSS THE ADVANTAGES AND CHALLENGES OF PERFORMING ANALYSIS IN YOUR CHOSEN SOFTWARE TOOL
-
 ___
 
 When looking at the merged dataset detailing income and alcohol consumption on the zip code level, it appears that most of the data reflects a relatively low amount of alcohol sales for Iowa residents residing in zip codes with an average income less than $20,000 and over $35,000. Those making incomes between $20,000 and $35,000 have higher alcohol sales volume per capita relative to residents of other zip codes with differing average income, and that contrast is heightened even further when considering alcohol sales in dollars per capita. The overwhelming majority of the data set is clustered towards low consumption of alcohol on a volume and dollars level, however there are a series of outliers for zip codes with an average income of $20,000-$35,000 as previously mentioned. Certain zip codes are not all that surprising, specifically zip codes 52401 and 50314 which represent the large cities Cedar Rapids and Des Moines respectively. Other zip codes such as 50033 (Madison County) and 51101 (Sioux City) also deviate from the norm of the dataset in having extremely high levels of spending on alcohol relative to their average salary, although part of this disparity might be attributable to their low population size. 
 
+___
+
+Overall, Tableau was an incredibly useful tool for the current analysis. This software tool facilitated the creation of descriptive yet digestible vizualizations which captured overall trends in income and liquor sales, aggregated to the zipcode, city, and county levels. The 'filter' feature in Tableau was particualarly useful in deaggregating trends by liquor category and creating an interactive experience for viewers of the live visualizations in Tableau Public. Further, the creation of heatmaps within Tableau aided the geographic layer of the current analysis. Specifically, heatmaps were useful in examining overall similarities and differences in dominant geographic trends for income and liquor sales. In addition, the public version of Tableau, Tableau Public, allows for visualizations to be widely accessible and for users to interact with live dashboard features, such as filters. 
+
 
 ## 4. Conclusion
 
+The current analysis has utilized software tools to examine the question, *To what extent does an individual's income affect their purchase (and assumed consumption) of alcohol in Iowa?* 
+
+The Tableau-based portion of this analysis has explored income, liquor sales, and the relationship between the two at three different levels of geographic specificity. Specifically, Tableau worksheets were created for examination of the zipcode, city, and county level data. The overall trends and distribution of key variables (income and liquor sales) were explored separately at each level of geographic specificity. Tableau aided the creation of visualizations like histograms and bar charts for this purpose. Next, the relationship between income and liquor sales (both in nominal and per capita terms) was explored. Tableau aided the creation of visualizations like scatter diagrams and heatmaps for this purpose. Tableau dashboards were assembled to convey the overall analytical story and were published to Tableau Public. 
+
+Overall, the current analysis suggests that the relationship between income and liquor sales is not neccessarily uniform across all levels of geographic specificity. Specifically, the *overall* estimated relationship between income and liquor sales appears to be negative at the zipcode level but positive at the county level. 
+
 
 ## 5. Policy Recommendation
+
+POSITIVE AT COUNTY-LEVEL BUT NEGATIVE AT ZIP-CODE LEVEL?  - could mean that taxes should be county-level specific - counties with higher income have higher alcohol excise taxes
+
 
