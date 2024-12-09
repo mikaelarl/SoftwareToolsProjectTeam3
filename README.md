@@ -100,7 +100,7 @@ The current analysis has utilized software tools to examine the question, *To wh
 
 The Tableau-based portion of this analysis has explored income, liquor sales, and the relationship between the two at three different levels of geographic specificity. Specifically, Tableau worksheets were created for examination of the zipcode, city, and county level data. The overall trends and distribution of key variables (income and liquor sales) were explored separately at each level of geographic specificity. Tableau aided the creation of visualizations like histograms and bar charts for this purpose. Next, the relationship between income and liquor sales (both in nominal and per capita terms) was explored. Tableau aided the creation of visualizations like scatter diagrams and heatmaps for this purpose. Tableau dashboards were assembled to convey the overall analytical story and were published to Tableau Public. 
 
-Overall, the current analysis suggests that the relationship between income and liquor sales is not neccessarily uniform across all levels of geographic specificity. Specifically, the *overall* estimated relationship between income and liquor sales appears to be negative at the zipcode level but positive at the county level. 
+The current analysis suggests that the relationship between income and liquor sales is not neccessarily uniform across all levels of geographic specificity. Specifically, the *overall* estimated relationship between income and liquor sales appears to be negative at the zipcode level but positive at the county level. 
 
 
 ## 5. Policy Recommendation
