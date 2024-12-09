@@ -102,8 +102,14 @@ The Tableau-based portion of this analysis has explored income, liquor sales, an
 
 The current analysis suggests that the relationship between income and liquor sales is not neccessarily uniform across all levels of geographic specificity. Specifically, the *overall* estimated relationship between income and liquor sales appears to be negative at the zipcode level but positive at the county level. 
 
+The current analysis is somewhat limited by the dataset utilized, as it only spans four years (2012-2016). Further, the current analysis only broadly examines the relationship between income and liquor sales, without neccessarily considering other potentially counfounding factors, like age, gender, and cultural norms, which likely also impact liquor purchase and consumption. Since the dataset utilized did not capture these variables, the current analysis could not control for the potential confounding influence of these factors on liquor sales. Future work should certainly consider factors like age, gender, and social norms, and how they might influence or interact with income and potentially alter its causal impact on liquor sales. Though they are difficult to measure, social norms are particularly important to the research question. Future work may wish to broaden its scope to other states across the US in order to gain insight into how cultural norms may (or may not) mediate the relationship between income and liquor sales. 
+
 
 ## 5. Policy Recommendation
+
+DO THIS PART 
+
+("Introduce a specific policy decision that your decision maker is facing. Provide a data driven recommendation for their decision. Explain probable first and second order effects of the recommendation. Explain the benefits and risks of the recommendation.")
 
 POSITIVE AT COUNTY-LEVEL BUT NEGATIVE AT ZIP-CODE LEVEL?  - could mean that taxes should be county-level specific - counties with higher income have higher alcohol excise taxes
 
