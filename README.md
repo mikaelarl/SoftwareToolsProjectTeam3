@@ -107,8 +107,10 @@ ___
 
 We also looked at the income and liquor consumption from the geographic breakdown of cities in Iowa, and examined this data using Tableau. We did this by creating two dashboards, one that looked at city income levels and liquor consumption using mapping and bar charts in Tableau, and the other by creating a scatterplot for more advanced data analysis exploring the relationship between city volume liquor consumption versus city income. The first dashboard described can be seen below.
 
-<img width="1042" alt="Maps Dashboard (Counties)" src = "https://github.com/mikaelarl/SoftwareToolsProjectTeam3/tree/main/City Income Consume Scatter.png">
-<img width="1042" alt="Maps Dashboard (Counties)" src = "https://github.com/mikaelarl/SoftwareToolsProjectTeam3/tree/main/City Map Bar Dashboard.png">
+<img width="1042" alt="City Income and Consumption Scatter" src = "https://github.com/mikaelarl/SoftwareToolsProjectTeam3/tree/main/CityIncomeConsumeScatter.png">
+<img width="1042" alt="City Map and Bar Chart Dashboard" src = "https://github.com/mikaelarl/SoftwareToolsProjectTeam3/tree/main/CityMapBarDashboard.png">
+
+
 ___
 
 Overall, Tableau was an incredibly useful tool for the current analysis. This software tool facilitated the creation of descriptive yet digestible vizualizations which captured overall trends in income and liquor sales, aggregated to the zipcode, city, and county levels. The 'filter' feature in Tableau was particualarly useful in deaggregating trends by liquor category and creating an interactive experience for viewers of the live visualizations in Tableau Public. Further, the creation of heatmaps within Tableau aided the geographic layer of the current analysis. Specifically, heatmaps were useful in examining overall similarities and differences in dominant geographic trends for income and liquor sales. In addition, the public version of Tableau, Tableau Public, allows for visualizations to be widely accessible and for users to interact with live dashboard features, such as filters. 
