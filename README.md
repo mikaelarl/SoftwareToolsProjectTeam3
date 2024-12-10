@@ -108,7 +108,7 @@ ___
 We also looked at the income and liquor consumption from the geographic breakdown of cities in Iowa, and examined this data using Tableau. We did this by creating two dashboards, one that looked at city income levels and liquor consumption using mapping and bar charts in Tableau, and the other by creating a scatterplot for more advanced data analysis exploring the relationship between city volume liquor consumption versus city income. The first dashboard described can be seen below:
 
 <p align = "center">
-<img width="1042" alt="City Map and Bar Chart Dashboard" src = "https://github.com/mikaelarl/SoftwareToolsProjectTeam3/blob/main/CityMapBarDashboar.png">
+<img width="1042" alt="City Map and Bar Chart Dashboard" src = "https://github.com/mikaelarl/SoftwareToolsProjectTeam3/blob/main/CityMapBarDashboard.png">
 </p>
 
 When looking at the two map visualizations on the Tableau dashboard, it is clear that both liquor consumption and income distribution is located around the same city areas geographically in Iowa. This makes sense because people normally congregate in larger groups around cities, which tend to have larger amounts of income and also larger liquor consumption due to increased number of people versus rural areas. Next we will discuss findings from the scatter plot examining the relationship between city volume liquor consumption versus city income:
