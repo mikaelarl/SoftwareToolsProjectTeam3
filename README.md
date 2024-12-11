@@ -20,9 +20,6 @@ The current analysis combines data from two sources, both of which cover three l
 
 ADD DESCRIPTIVE STATISTICS AS APPLICABLE 
 
-
-## 3. Data Analytics
-
 It might first be helpful to examine the distribution of our main causal variable of interest, income. Histograms displaying the distribution of median income at the zip-code, city, and county levels can be found below: 
 
 <img width="1042" alt="Income Distribution (Counties)" src = "https://github.com/mikaelarl/SoftwareToolsProjectTeam3/tree/main/countiesincomedist.png">
@@ -43,7 +40,12 @@ Also examine the distribution of income for the next highest level of graphic sp
 
 This histogram, which capture the distribution of median income at the city level, points to a slightly right-skewed distribution. With a right-, or positively- skewed distribution, most of the data lies at the lower end of the distribution, with some extreme values on the high-end of the distribution. For this type of distribution, the mean is often greater than the median, since the mean is sensitive to these extreme values. 
 
-Next, let's examine the geographical distribution of both income and liquor sales ($) across the state of Iowa. Dashboards displaying the these geographical distributions at the zip-code, city, and county levels can be found below:
+
+## 3. Data Analytics
+
+
+
+Let's starst by examining the geographical distribution of both income and liquor sales ($) across the state of Iowa. Dashboards displaying the these geographical distributions at the zip-code, city, and county levels can be found below:
 
 <img width="1042" alt="Maps Dashboard (Counties)" src = "https://github.com/mikaelarl/SoftwareToolsProjectTeam3/tree/main/countiesmapsdash.png">
 <img width="1042" alt="Maps Dashboard (Cities)" src = "https://github.com/mikaelarl/SoftwareToolsProjectTeam3/tree/main/citiesmapsdash.png">
