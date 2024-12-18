@@ -4,6 +4,8 @@
 ### Dashboards on Tableau Public:
 Dashboards pertaining to our analysis can be accessed on Tableau Public at the following link: https://public.tableau.com/app/profile/mikaela.renaud.lowther/vizzes 
 
+### Policy brief: 
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/CL2ne89XiUM/0.jpg)](https://youtu.be/CL2ne89XiUM)
 
 ## 1. Introduction
 
